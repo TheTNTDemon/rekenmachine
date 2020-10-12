@@ -15,10 +15,9 @@ const Backspace = () => {
 
 function Answer() {
     let screen = getElement('display');
-    let history = getElement('history');
     answer = math.evaluate(screen.innerText);
 
-    history.innerHTML += screen.innerHTML + ' = ' + answer + '<br>'
+    getElement('history').innerHTML += `${screen.innerHTML} = ${answer}<br>`
     screen.innerHTML = answer;
 }
 
