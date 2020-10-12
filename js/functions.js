@@ -46,3 +46,17 @@ var answer = null;
 
 const getElement = (id) => document.getElementById(id);
 const addToDisplay = (value) => getElement('display').innerHTML += value;
+
+document.addEventListener('keydown', (e) => onInput(e.key), true);
+
+function callback(e) {
+    if (e.target.tagName !== 'BUTTON')
+        return;
+
+    onInput(e.target.innerHTML)
+}
+
+if (document.addEventListener)
+   document.addEventListener('click', callback, false);
+else
+    document.attachEvent('onclick', callback);

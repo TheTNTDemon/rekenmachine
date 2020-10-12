@@ -1,48 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rekenmachine</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="https://unpkg.com/mathjs/dist/math.min.js"></script>
-    <script src="js/functions.js">
-      window.onload = document.addEventListener('keydown', (e) => onInput(e.key), true);
-    </script>
-  </head>
-  <body>
-    <div id="rekenmachine">
-      <div id="display"></div>
-      <div id="btncont" onclick="(e) => console.log(e.target);">
-        <button onclick="onInput(this.innerHTML);">1</button>
-        <button onclick="onInput(this.innerHTML);">2</button>
-        <button onclick="onInput(this.innerHTML);">3</button>
 
-        <button onclick="onInput(this.innerHTML);">+</button>
-        <button onclick="onInput(this.innerHTML);">C</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rekenmachine</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://unpkg.com/mathjs/dist/math.min.js"></script>
+  <script src="js/functions.js"></script>
+</head>
 
-        <button onclick="onInput(this.innerHTML);">4</button>
-        <button onclick="onInput(this.innerHTML);">5</button>
-        <button onclick="onInput(this.innerHTML);">6</button>
+<body>
+  <div id="rekenmachine">
+    <div id="display"></div>
+    <div id="btncont" onclick="(e) => console.log(e.target);">
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
 
-        <button onclick="onInput(this.innerHTML);">-</button>
-        <button onclick="onInput(this.innerHTML);">B</button>
+      <button>+</button>
+      <button>C</button>
 
-        <button onclick="onInput(this.innerHTML);">7</button>
-        <button onclick="onInput(this.innerHTML);">8</button>
-        <button onclick="onInput(this.innerHTML);">9</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
 
-        <button onclick="onInput(this.innerHTML);">/</button>
-        <button onclick="onInput(this.innerHTML);">=</button>
+      <button>-</button>
+      <button>B</button>
 
-        <button onclick="onInput(this.innerHTML);">0</button>
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
 
-        <button onclick="onInput(this.innerHTML);">.</button>
-        <button onclick="onInput(this.innerHTML);">*</button>
-      </div>
+      <button>/</button>
+      <button>=</button>
+
+      <button>0</button>
+
+      <button>.</button>
+      <button>*</button>
     </div>
-    <div id="history">
-        <h4>History:</h4>
-    </div>
-  </body>
+  </div>
+  <div id="history">
+    <h4>History:</h4>
+  </div>
+</body>
+
 </html>
