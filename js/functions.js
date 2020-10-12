@@ -1,4 +1,3 @@
-
 function utilBtnPressed(modifier) {
     if (keyMap[modifier] && getElement('display').innerHTML.endsWith(modifier))
         return;
@@ -35,17 +34,15 @@ var keyMap = {
     '=': Answer,
     'c': Clear,
     'Backspace': Backspace,
+    'B': Backspace,
     '+': utilBtnPressed,
     '-': utilBtnPressed,
     '*': utilBtnPressed,
     '/': utilBtnPressed,
     '.': utilBtnPressed,
-
 }
 
 var answer = null;
 
 const getElement = (id) => document.getElementById(id);
 const addToDisplay = (value) => getElement('display').innerHTML += value;
-
-document.addEventListener('keydown', (e) => onInput(e.key), true);
