@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rekenmachine</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/functions.js"></script>
+  </head>
+  <body>
+    <div id="rekenmachine">
+      <div id="scherm"></div>
+      <div id="btncont">
+        <button id="b1" class="button" onclick="BtnPressed(1);">1</button>
+        <button id="b2" class="button" onclick="BtnPressed(2);">2</button>
+        <button id="b3" class="button" onclick="BtnPressed(3);">3</button>
+        
+        <button id="ub1" class="button" onclick="UBtnPressed('+');">+</button>
+        <button id="clear" class="button" onclick="Clear();">C</button>
+
+        <button id="b4" class="button" onclick="BtnPressed(4);">4</button>
+        <button id="b5" class="button" onclick="BtnPressed(5);">5</button>
+        <button id="b6" class="button" onclick="BtnPressed(6);">6</button>
+
+        <button id="ub2" class="button" onclick="UBtnPressed('-');">-</button>
+        <button id="backspace" class="button" onclick="Backspace();">B</button>
+
+        <button id="b7" class="button" onclick="BtnPressed(7);">7</button>
+        <button id="b8" class="button" onclick="BtnPressed(8);">8</button>
+        <button id="b9" class="button" onclick="BtnPressed(9);">9</button>
+
+        <button id="ub3" class="button" onclick="UBtnPressed('/');">/</button>
+        <button id="ub4" class="button" onclick="Answer();">=</button>
+
+        <button id="b0" class="button" onclick="BtnPressed(0);">0</button>
+
+        <button id="ub5" class="button" onclick="UBtnPressed('.');">.</button>
+        <button id="ub6" class="button" onclick="UBtnPressed('*');">*</button>
+      </div>
+      <!-- end btncont -->
+    </div>
+    <!-- end div rekenmachine -->
+    <div id="history">
+        <h4>History:</h4>
+    </div>
+    <!-- end div history -->
+  </body>
+</html>
