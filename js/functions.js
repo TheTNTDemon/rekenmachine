@@ -49,12 +49,7 @@ const addToDisplay = (value) => getElement('display').innerHTML += value;
 
 document.addEventListener('keydown', (e) => onInput(e.key), true);
 
-function callback(e) {
-    if (e.target.tagName !== 'BUTTON')
-        return;
-
-    onInput(e.target.innerHTML)
-}
+const callback = (e) => e.target.tagName === 'BUTTON' ? onInput(e.target.innerHTML) : null;
 
 if (document.addEventListener)
    document.addEventListener('click', callback, false);
